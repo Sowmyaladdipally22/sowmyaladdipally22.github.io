@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Previous head content remains the same -->
+    <style>
+        /* Previous styles remain the same */
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="hero">
+                <img src="https://github.com/Sowmyaladdipally22/portfolio-images/blob/main/swms%20photo.jpg?raw=true" 
+                     alt="Professional Photo" 
+                     class="profile-img">
+                <!-- Rest of the header content remains the same -->
+            </div>
+        </div>
+    </header>
+    <!-- Rest of the body content remains the same -->
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sowmya Laddipally - Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-bg: #f5f6fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            padding: 4rem 0;
+            background: var(--light-bg);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Projects Section */
+        .projects-section {
+            padding: 4rem 0;
+        }
+
+        .project-card {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tech-tag {
+            background: var(--secondary-color);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        /* Experience Section */
+        .experience-section {
+            padding: 4rem 0;
+            background: var(--light-bg);
+        }
+
+        .experience-card {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="hero">
+                <div class="profile-img"></div>
+                <h1>Sowmya Laddipally</h1>
+                <p>Aspiring | Business Analyst| Information Systems Graduate</p>
+                <div class="social-links">
+                    <a href="mailto:sl76850n@pace.edu">Email</a>
+                    <a href="http://www.linkedin.com/in/sowmyaladdipally" target="_blank">LinkedIn</a>
+                    <a href="tel:+12014927032">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Database Management</h3>
+                    <p>SQL, PostgreSQL, Python, HTML, CSS, R</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Data Analysis</h3>
+                    <p>Tableau, Power BI, Google Analytics, Excel, Advanced Visualization</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Project Management</h3>
+                    <p>Agile Development, Requirements Gathering, Stakeholder Management</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Business Intelligence</h3>
+                    <p>Data Visualization, Business Process Mapping, Risk Management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-card">
+                <h3>Optimize Wireless Network Deployment</h3>
+                <p>Led network optimization initiative achieving 40% performance improvement through advanced techniques and technologies.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Power BI</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">Python</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Rollcall - Simplified Attendance System</h3>
+                <p>Developed real-time reporting dashboard reducing manual errors by 25% using Agile methodology.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Tableau</span>
+                    <span class="tech-tag">Agile/Scrum</span>
+                    <span class="tech-tag">SQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-card">
+                <h3>Wells Fargo - Business Analyst</h3>
+                <p>Led data-driven dashboard creation using Tableau and SQL, performing complex data analysis and modeling for strategic decision-making.</p>
+            </div>
+            <div class="experience-card">
+                <h3>NMDC Public Limited - Business Analyst Intern</h3>
+                <p>Managed data integration and purification using SQL and Python, enhancing analytical insights quality.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
