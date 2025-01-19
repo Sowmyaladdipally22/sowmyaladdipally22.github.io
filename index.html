@@ -1,261 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Previous head content remains the same -->
-    <style>
-        /* Previous styles remain the same */
-        .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin-bottom: 1rem;
-            object-fit: cover;
-            border: 4px solid white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
+  <head>
+    <title>Sowmya Laddipally Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-        .profile-img:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="hero">
-                <img src="https://github.com/Sowmyaladdipally22/portfolio-images/blob/main/swms%20photo.jpg?raw=true" 
-                     alt="Professional Photo" 
-                     class="profile-img">
-                <!-- Rest of the header content remains the same -->
-            </div>
-        </div>
-    </header>
-    <!-- Rest of the body content remains the same -->
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sowmya Laddipally - Portfolio</title>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
-            --light-bg: #f5f6fa;
-        }
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+    <link rel="stylesheet" href="css/aos.css">
 
-        body {
-            line-height: 1.6;
-            color: var(--primary-color);
-        }
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
 
-        /* Header Styles */
-        header {
-            background: var(--primary-color);
-            color: white;
-            padding: 2rem 0;
-        }
 
-        .hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
+<style>
 
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background: var(--secondary-color);
-            margin-bottom: 1rem;
-        }
+/*======================================
+//--//-->   ABOUT
+======================================*/
 
-        .social-links a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 
-        /* Skills Section */
-        .skills-section {
-            padding: 4rem 0;
-            background: var(--light-bg);
-        }
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
+.about-mf .about-img img {
+  margin-left: 10px;
+}
 
-        .skill-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
 
-        /* Projects Section */
-        .projects-section {
-            padding: 4rem 0;
-        }
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
 
-        .project-card {
-            background: white;
-            margin-bottom: 2rem;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
 
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
 
-        .tech-tag {
-            background: var(--secondary-color);
-            color: white;
-            padding: 0.3rem 0.8rem;
-            border-radius: 15px;
-            font-size: 0.9rem;
-        }
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
 
-        /* Experience Section */
-        .experience-section {
-            padding: 4rem 0;
-            background: var(--light-bg);
-        }
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
 
-        .experience-card {
-            background: white;
-            margin-bottom: 2rem;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
 
-            .container {
-                padding: 0 15px;
-            }
-        }
 
-        h1, h2, h3 {
-            margin-bottom: 1rem;
-        }
+/* project image zoom effect */
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
 
-        .highlight {
-            color: var(--accent-color);
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="hero">
-                <div class="profile-img"></div>
-                <h1>Sowmya Laddipally</h1>
-                <p>Aspiring | Business Analyst| Information Systems Graduate</p>
-                <div class="social-links">
-                    <a href="mailto:sl76850n@pace.edu">Email</a>
-                    <a href="http://www.linkedin.com/in/sowmyaladdipally" target="_blank">LinkedIn</a>
-                    <a href="tel:+12014927032">Contact</a>
-                </div>
-            </div>
-        </div>
-    </header>
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
 
-    <section class="skills-section">
-        <div class="container">
-            <h2 class="section-title">Core Competencies</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Database Management</h3>
-                    <p>SQL, PostgreSQL, Python, HTML, CSS, R</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Data Analysis</h3>
-                    <p>Tableau, Power BI, Google Analytics, Excel, Advanced Visualization</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Project Management</h3>
-                    <p>Agile Development, Requirements Gathering, Stakeholder Management</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Business Intelligence</h3>
-                    <p>Data Visualization, Business Process Mapping, Risk Management</p>
-                </div>
-            </div>
-        </div>
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Sowmya Laddipally</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Sowmya Laddipally</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Business Analyst  ',
+						'Product Analyst  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 1 year of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://sowmyaladdipally22.github.io/" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
     </section>
 
-    <section class="projects-section">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="project-card">
-                <h3>Optimize Wireless Network Deployment</h3>
-                <p>Led network optimization initiative achieving 40% performance improvement through advanced techniques and technologies.</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">Power BI</span>
-                    <span class="tech-tag">SQL</span>
-                    <span class="tech-tag">Python</span>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>Rollcall - Simplified Attendance System</h3>
-                <p>Developed real-time reporting dashboard reducing manual errors by 25% using Agile methodology.</p>
-                <div class="tech-stack">
-                    <span class="tech-tag">Tableau</span>
-                    <span class="tech-tag">Agile/Scrum</span>
-                    <span class="tech-tag">SQL</span>
-                </div>
-            </div>
-        </div>
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Sowmya Laddipally</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Business Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>1 Year 3 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Hyderabad, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>Project Management tools</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Product Development</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>SQL</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Business Analytics</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Analytics</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Driven Master's student in Information Systems with a strong foundation in Business analytics and project management. Proven track record as a Business Analyst at Wells Fargo, enhancing operational efficiency through data-driven strategies. Seeking to leverage my skills in a dynamic organization to drive impactful projects.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Business Analytics &amp;Project Management</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Information Technology, &amp;Finance & Banking</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Masters In Information Systems</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English,Telugu,Hindi</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft office(suite), Power BI &amp; Tableau</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Scrum,Agile methodology, Excel, Git, JIRA, Google Analytics &amp;Business Analytics</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling,Lisenting Music</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="5">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="www.linkedin.com/in/sowmyaladdipally" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     </section>
 
-    <section class="experience-section">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="experience-card">
-                <h3>Wells Fargo - Business Analyst</h3>
-                <p>Led data-driven dashboard creation using Tableau and SQL, performing complex data analysis and modeling for strategic decision-making.</p>
-            </div>
-            <div class="experience-card">
-                <h3>NMDC Public Limited - Business Analyst Intern</h3>
-                <p>Managed data integration and purification using SQL and Python, enhancing analytical insights quality.</p>
-            </div>
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Driven Master's student in Information Systems with a strong foundation in Business analytics and project management. Proven track record as a Business Analyst at Wells Fargo, enhancing operational efficiency through data-driven strategies. Seeking to leverage my skills in a dynamic organization to drive impactful projects.</p>
+          </div>
         </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2019-2020</span>
+						<h2>Business Analyst</h2>
+						<span class="position">wells Fargo</span>
+						<p class="mt-4">Wells Fargo, a American Multinational Financial Services company with a significant Global presence. 
+							<ul>
+								<li>Achieved a 25% increase in loan processing speed and a 15% reduction in errors and implemented data-driven strategies to enhance the accuracy of loan documentation. Collaborated with cross-functional teams to analyze documentation processes and identify areas for improvement.</li>
+								<li>Streamlined complex loan documentation processes, reducing processing time by 30%. Automated the interpretation of loan documentation policies using machine learning algorithms.• Enhanced alignment and Increased assessment accuracy by 18% in risk evaluation with organizational goals.</li>
+								<li>Improved overall loan documentation accuracy Created and utilized interactive dashboards to track key performance indicators related to loan documentation. Leveraged Tableau and SQL for real-time data visualization and monitoring of documentation accuracy metrics.Developed predictive models to assess risks, improving interdepartmental collaboration and decision-making.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023-2025</span>
+    					<h2>Masters In Informations</h2>
+    					<span class="position">Pace University</span>
+    					<p class="mt-4">GPA: 3.67</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2014-2017</span>
+    					<h2>Bachelor Of Commerce</h2>
+    					<span class="position">Osmania University</span>
+    					<p class="mt-4">GPA: 3.8</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
     </section>
-</body>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p> projects </p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Sowmyaladdipally22/zara-website-redesign-project" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Sowmyaladdipally22/zara-website-redesign-project">Zara Website Redesign | Web Development | User Experience Design</a></h3>
+                <p>Conducted user research to identify navigation issues and performance concerns.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Sowmyaladdipally22/Sentiment-IQ-AI-Driven-Hospitality-Review-Analytics" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Sowmyaladdipally22/Sentiment-IQ-AI-Driven-Hospitality-Review-Analytics">Sentiment IQ: AI-Driven Hospitality Review Analytics</a></h3>
+                <p>Managed the project from conception to deployment, developed a comprehensive go-to-market plan, and designed an AI-driven sentiment analysis platform.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/Sowmyaladdipally22/Optimizing-Wireless-Network-Deployment-for-Contemporary-Connectivity-Demands" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Sowmyaladdipally22/Optimizing-Wireless-Network-Deployment-for-Contemporary-Connectivity-Demands">Optimize Wireless Network Deployment using Power BI</a></h3>
+                <p>Integrated cutting-edge technologies such as Wi-Fi 6 and 5G, boost network capacity and data rates by up to 70%, and effectively reduced signal interference and network congestion to accommodate future demand.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Sowmyaladdipally22/Rollcall-Simplified-Attendance-System" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Sowmyaladdipally22/Rollcall-Simplified-Attendance-System">Rollcall (Simplified Attendance System) |Agile Methodology| Product management</a></h3>
+				  <p>Wireframed and designed a real-time reporting dashboard using Tableau, collected and analyzed product requirements through stakeholder meetings, and assisted in building a product roadmap.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Sowmyaladdipally22/Autotrader-E-Business-Database-Design-Project" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Sowmyaladdipally22/Autotrader-E-Business-Database-Design-Project">Autotrader E-Business Database Design Project</a></h3>
+				  <p>Developed a comprehensive top-down Entity-Relationship (ER) diagram and a fully normalized relational database model, designed and executed SQL queries and reports.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="8">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Volunteer Activities</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="8">0</strong>
+                <span>Skills</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://sowmyaladdipally22.github.io/" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Hyderabad, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+ 1 2014927023</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">sowmyaladdipally96@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
 </html>
